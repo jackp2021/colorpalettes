@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>colorpalettes</title>
+
+</div>
+
+
+
+
+          </div>
+</body>
+  <link rel="stylesheet" href="static/css/jquery-ui.css" />
+  <script src="static/js/jquery-1.9.1.js"></script>
+  <script src="static/js/jquery-ui.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href='static/css/sofia.css' rel='stylesheet' type='text/css'>
+  <strong>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+   <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/lean-slider.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/sample-styles.css') }}"> -->
+ </strong>
+</head>
+<body>
+
+      <strong><nav>
+        <h1 style="padding-left:50px">Harvard Art Museums Colors</h1>
+        <div id = "right" style="position:fixed;right:0px; top:0px; padding-top:25px; padding-right:40px; z-index:1; text-align:right">
+
+         <button type="button" class="collapsible" style="background-color:white; text-align:center; font-size:16px; color:black; width:50px;">Info <i class="arrow down"></i> </button>
+          <div class="content" style="text-align:right">
+            <p style="font-weight:normal">
+            by <a href="http://jackp2021.github.io"> Jack Patterson</a> in April 2021<br> for <a href="http://pfch.nyc">PFCH</a> at Pratt Institute,
+            <br>
+            not in affiliation with HAM.
+            <br>
+            <br>
+            <i>How to use:</i><br>
+            Click each color bar for larger image; <br> shift-click for HAM collections page.
+            <br>
+            <br>
+            <a href="https://github.com/jackp2021/colorpalettes"> Github </a></p>
+          </div>
+      </nav></strong>
+
+
+<p></p>
+  <div class="container" style="position:fixed;   width: 200px;
+    height:300px; left:50px; top:100px; padding-left: 45px; padding-top:320px; z-index:1">
+    {% block sidebar %}
+    {% endblock %}
+  </div>
+  <div class="container" style="position:fixed;position:fixed; width: 1000px; height: 500px; right:0px; top:20px; padding-bottom:50px">
+    {% block graph %}
+    {% endblock %}
+
+<div  style:"position:fixed; bottom:0; left:0">
+
+</div>
+
+
+</html>
